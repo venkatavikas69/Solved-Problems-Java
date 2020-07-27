@@ -1,3 +1,37 @@
+/* Alternative short solution for right rotation
+import java.util.*;
+
+class RightRotation {
+    public static void main(String[] args) {
+    	
+    	Scanner in = new Scanner(System.in);
+    	
+    	String[] arr = in.nextLine().split(" ");
+    	int dfr = in.nextInt();
+    	String[] out = new String[arr.length];
+    	
+    	if(dfr>arr.length) {
+    		dfr %= arr.length;
+    	}
+    	
+    	for(String a : arr) {
+    		if(dfr>arr.length-1) {
+    			dfr = 0;
+    		}
+    		
+    		out[dfr] = a;
+    		dfr++;
+    	}
+    	
+    	for(String a : out) {
+    		System.out.print(a+" ");
+    	}
+    	
+    }
+}
+*/
+
+
 import java.util.*;
 class RightRotation {
     public static void main(String[] args) {
