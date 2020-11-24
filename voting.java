@@ -35,7 +35,8 @@ public class DayScholar {
 			    }
 			}
 			if (matchingIndex == -1) {
-			    System.out.println("N");
+			    System.out.println("Not valid");
+			    voters++;	
 			} else {
 			    candidates[matchingIndex].count++;
 			}
