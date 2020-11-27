@@ -1,13 +1,6 @@
-/*
-
-In this program we get the highest number from the inputs that are ending with 0
-
-*/
-
-
 import java.util.*;
 
-public class test2 {
+public class highestNumber {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
